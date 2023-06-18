@@ -1,4 +1,6 @@
 @import "../styles/variables.scss";
+@import "../styles/colors.scss";
+
 $side-width: 350px;
 
 .container {
@@ -14,5 +16,17 @@ $side-width: 350px;
   &.flexLayout {
     display: flex;
     flex-direction: column;
+  }
+
+  .headerMain {
+    .title {
+      font-weight: 500;
+      font-size: 1.7em;
+    }
+
+    .description {
+      font-size: $sub-text-size;
+      color: $sub-text;
+    }
   }
 }
