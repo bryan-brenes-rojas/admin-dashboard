@@ -1,0 +1,30 @@
+@import "../../styles/colors.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+
+  & > span {
+    display: block;
+    font-size: 0.7em;
+    color: $sub-text;
+  }
+
+  .title {
+    font-size: 0.8em;
+    font-weight: bold;
+    color: $text;
+  }
+
+  .author {
+    .heart {
+      fill: #af0908;
+    }
+
+    .name {
+      color: $text;
+      text-decoration: none;
+    }
+  }
+}
