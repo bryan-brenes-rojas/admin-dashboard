@@ -8,6 +8,7 @@
   border-radius: 1em;
   font-weight: 500;
   text-decoration: none;
+  color: $text;
 
   &.active {
     background-color: $accent;
