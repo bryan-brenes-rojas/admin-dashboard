@@ -13,9 +13,6 @@ $side-width: 300px;
     bottom: 0;
     left: 0;
     width: $side-width;
-    height: 100vh;
-    max-height: 100vh;
-    overflow: auto;
 
     .panel {
       margin: 1em;
@@ -23,6 +20,7 @@ $side-width: 300px;
       flex: 1;
       border-radius: 1.8em;
       background-color: $bg-primary-alt;
+      overflow: auto;
     }
   }
 

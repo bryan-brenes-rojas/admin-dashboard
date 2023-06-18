@@ -1,0 +1,25 @@
+@import "../../styles/colors.scss";
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+
+  .left { 
+    .logo {
+      width: 4em;
+    }
+  }
+
+  .right { 
+    .title { 
+      font-weight: 700;
+      font-size: 1.7em;
+      line-height: 1em;
+    }
+    .subTitle {
+      font-size: 0.7em;
+      color: $sub-text;
+    }
+  }
+}
