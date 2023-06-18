@@ -2,10 +2,10 @@ import { NavItem, NavLink } from "./nav-item/nav-item";
 import classes from "./nav-items.module.scss";
 
 const ITEMS: NavLink[] = [
-  { title: "Dashboard", icon: "dashboard", path: "#" },
+  { title: "Dashboard", icon: "dashboard", path: "/" },
   { title: "Email", icon: "email", path: "#" },
   { title: "Contacts", icon: "contacts", path: "#" },
-  { title: "Crypto", icon: "crypto", path: "#" },
+  { title: "Crypto", icon: "crypto", path: "/crypto" },
   { title: "Kanban", icon: "kanban", path: "#" },
   { title: "Invoicing", icon: "invoicing", path: "#" },
   { title: "Banking", icon: "banking", path: "#" },
@@ -17,8 +17,8 @@ const ITEMS: NavLink[] = [
 export const NavItems = () => {
   return (
     <div className={classes.container}>
-      {ITEMS.map((item) => (
-        <NavItem {...item} />
+      {ITEMS.map((item, i) => (
+        <NavItem key={i} {...item} />
       ))}
     </div>
   );

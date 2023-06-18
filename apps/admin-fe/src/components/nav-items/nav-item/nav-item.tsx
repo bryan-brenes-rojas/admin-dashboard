@@ -11,6 +11,7 @@ import { BiWalletAlt } from "react-icons/bi";
 import { BsGrid } from "react-icons/bs";
 import { GoMail } from "react-icons/go";
 import { MdOutlineModeEdit } from "react-icons/md";
+import { Link } from "react-router-dom";
 import classes from "./nav-item.module.scss";
 
 const ICONS: { [name: string]: ReactElement } = {
@@ -36,9 +37,9 @@ interface Props extends NavLink {}
 
 export const NavItem = ({ title, icon, path }: Props) => {
   return (
-    <div className={`${classes.container} ${classes.active}`}>
+    <Link to={path} className={`${classes.container} ${classes.active}`}>
       {ICONS[icon]}
       <span>{title}</span>
-    </div>
+    </Link>
   );
 };

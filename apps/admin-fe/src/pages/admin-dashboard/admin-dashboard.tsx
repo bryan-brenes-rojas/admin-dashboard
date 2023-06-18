@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom";
 import { CompanyHeader } from "../../components/company-header/company-header";
 import { NavItems } from "../../components/nav-items/nav-items";
 import { NavbarFooter } from "../../components/navbar-footer/navbar-footer";
@@ -15,7 +16,9 @@ export const AdminDashboard = () => {
           <NavbarFooter />
         </div>
       </nav>
-      <main className={classes.container__main}></main>
+      <main className={classes.container__main}>
+        <Outlet />
+      </main>
     </div>
   );
 };

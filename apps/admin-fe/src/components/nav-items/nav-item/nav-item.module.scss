@@ -1,13 +1,13 @@
 @import "../../../styles/colors.scss";
 
 .container {
-  cursor: pointer;
   display: flex;
   align-items: center;
   gap: 1em;
   padding: 1em;
   border-radius: 1em;
   font-weight: 500;
+  text-decoration: none;
 
   &.active {
     background-color: $accent;
