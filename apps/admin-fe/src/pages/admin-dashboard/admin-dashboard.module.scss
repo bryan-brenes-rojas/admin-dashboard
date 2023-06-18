@@ -1,4 +1,5 @@
 @import "../../styles/colors.scss";
+@import "../../styles/variables.scss";
 
 $side-width: 300px;
 
@@ -18,10 +19,10 @@ $side-width: 300px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      margin: 1em;
-      padding: 1em;
+      margin: $outer-spacing;
+      padding: $outer-spacing;
       flex: 1;
-      border-radius: 1.8em;
+      border-radius: $border-radius;
       background-color: $bg-primary-alt;
       overflow: auto;
 

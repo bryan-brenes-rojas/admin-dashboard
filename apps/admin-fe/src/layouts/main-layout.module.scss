@@ -1,0 +1,18 @@
+@import "../styles/variables.scss";
+$side-width: 350px;
+
+.container {
+  margin: $outer-spacing;
+  margin-left: 0;
+  gap: 2em;
+
+  &.gridLayout {
+    display: grid;
+    grid-template-columns: auto $side-width;
+  }
+
+  &.flexLayout {
+    display: flex;
+    flex-direction: column;
+  }
+}
