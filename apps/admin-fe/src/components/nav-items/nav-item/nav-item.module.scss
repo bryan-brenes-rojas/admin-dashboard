@@ -1,14 +1,25 @@
 @import "../../../styles/colors.scss";
 
 .container {
+  cursor: pointer;
   display: flex;
   align-items: center;
   gap: 1em;
   padding: 1em;
   border-radius: 1em;
+  font-weight: 500;
+
+  &.active {
+    background-color: $accent;
+    color: $text-accent;
+  }
   
   .icon {
     font-size: 1.4em;
     fill: $sub-text;
+  }
+
+  &.active .icon {
+    fill: $text-accent;
   }
 }

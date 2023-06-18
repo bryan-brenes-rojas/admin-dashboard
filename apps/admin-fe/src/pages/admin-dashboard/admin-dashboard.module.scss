@@ -24,6 +24,12 @@ $side-width: 300px;
       border-radius: 1.8em;
       background-color: $bg-primary-alt;
       overflow: auto;
+
+      .top {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+      }
     }
   }
 

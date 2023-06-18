@@ -36,7 +36,7 @@ interface Props extends NavLink {}
 
 export const NavItem = ({ title, icon, path }: Props) => {
   return (
-    <div className={classes.container}>
+    <div className={`${classes.container} ${classes.active}`}>
       {ICONS[icon]}
       <span>{title}</span>
     </div>

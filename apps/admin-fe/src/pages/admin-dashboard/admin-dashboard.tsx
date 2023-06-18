@@ -8,8 +8,10 @@ export const AdminDashboard = () => {
     <div className={classes.container}>
       <nav className={classes.container__side}>
         <div className={classes.panel}>
-          <CompanyHeader />
-          <NavItems />
+          <div className={classes.top}>
+            <CompanyHeader />
+            <NavItems />
+          </div>
           <NavbarFooter />
         </div>
       </nav>
