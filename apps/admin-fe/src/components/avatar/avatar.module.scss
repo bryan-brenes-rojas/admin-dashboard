@@ -1,0 +1,8 @@
+$image-width: 50px;
+
+.image {
+  width: $image-width;
+  height: $image-width;
+  object-fit: cover;
+  border-radius: 1em;
+}

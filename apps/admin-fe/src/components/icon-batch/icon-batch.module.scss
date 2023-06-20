@@ -1,0 +1,43 @@
+@import "../../styles/colors.scss";
+
+$batch-size: 30px;
+
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &::after {
+    content: attr(data-count);
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    border-radius: 10px;
+    width: $batch-size;
+    height: $batch-size;
+    line-height: $batch-size;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #fff;
+    top: -$batch-size/1.5;
+    left: 50%;
+    z-index: 10;
+  }
+
+  &.hiddenBatch::after {
+    visibility: hidden;
+  }
+
+  &.warning::after {
+    background-color: $warning;
+  }
+
+  &.info::after {
+    background-color: $info;
+  }
+
+  .icon {
+    font-size: 1.5em;
+  }
+}

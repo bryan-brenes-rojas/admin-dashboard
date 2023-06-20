@@ -19,14 +19,27 @@ $side-width: 350px;
   }
 
   .headerMain {
-    .title {
-      font-weight: 500;
-      font-size: 1.7em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .left {
+      .title {
+        font-weight: 500;
+        font-size: 1.7em;
+      }
+
+      .description {
+        font-size: $sub-text-size;
+        color: $sub-text;
+      }
     }
 
-    .description {
-      font-size: $sub-text-size;
-      color: $sub-text;
+    .right {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 2em;
     }
   }
 }
