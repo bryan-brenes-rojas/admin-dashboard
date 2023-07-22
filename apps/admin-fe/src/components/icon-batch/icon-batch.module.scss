@@ -20,7 +20,7 @@ $batch-size: 30px;
     font-size: 0.8em;
     font-weight: 500;
     color: #fff;
-    top: -$batch-size/1.5;
+    top: calc(-1 * $batch-size/1.5);
     left: 50%;
     z-index: 10;
   }

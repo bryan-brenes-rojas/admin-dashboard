@@ -1,0 +1,15 @@
+@import "../../styles/variables.scss";
+@import "../../styles/colors.scss";
+
+.container {
+  .title {
+    font-weight: 400;
+    font-size: 1.3em;
+    margin-bottom: 0.4em;
+  }
+
+  .subTitle {
+    font-size: $sub-text-size;
+    color: $sub-text;
+  }
+}
